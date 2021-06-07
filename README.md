@@ -1,6 +1,7 @@
 # Índice
 
 [Criando um projeto](#criando-um-projeto) <br>
+[Usando branches](#usando-branches) <br>
 
 Esse tutorial foi criado no sistema operacional **_Linux_**. Alguns comandos podem ser diferentes se você estiver utilizando _Windows_ ou _Mac_.
 
@@ -96,3 +97,43 @@ To https://github.com/marcia-marques/mastering-git-branches.git
 Repare que `master` é o nome do `branch`:
 
 ![image](https://user-images.githubusercontent.com/75334161/120944149-53d47e00-c709-11eb-8c58-0c0b1dad97ad.png)
+
+# Usando branches
+[&uarr;](#índice)
+
+Vamos utilizar os `branches` para fazer diferentes modificações
+
+```
+marcia@nt-marcia:~/mastering-git-branches$ git branch list
+marcia@nt-marcia:~/mastering-git-branches$ git branch
+  list
+* master
+marcia@nt-marcia:~/mastering-git-branches$ git checkout list
+Switched to branch 'list'
+marcia@nt-marcia:~/mastering-git-branches$ git branch
+* list
+  master
+```
+
+Após fazer as alterações, fazemos o `commit`, voltamos para o `master`, fazemos o `merge` e deletamos o `branch`
+
+```
+marcia@nt-marcia:~/mastering-git-branches$ git commit -m "add items"
+[list 66bd6bc] add items
+ 1 file changed, 4 insertions(+)
+marcia@nt-marcia:~/mastering-git-branches$ git checkout master
+Switched to branch 'master'
+marcia@nt-marcia:~/mastering-git-branches$ git branch
+  list
+* master
+marcia@nt-marcia:~/mastering-git-branches$ git merge list
+Updating 73022ba..66bd6bc
+Fast-forward
+ log.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+marcia@nt-marcia:~/mastering-git-branches$ git branch -d list
+Deleted branch list (was 66bd6bc).
+```
+
+![image](https://user-images.githubusercontent.com/75334161/121055198-6f846680-c793-11eb-853e-ded4409afaa9.png)
+
