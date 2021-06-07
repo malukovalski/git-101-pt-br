@@ -7,7 +7,7 @@ Esse tutorial foi criado no sistema operacional **_Linux_**. Alguns comandos pod
 # Criando um projeto
 [&uarr;](#índice)
 
-1. Criar um projeto no seu computador e iniciar o controle de versão
+1 - Criar um projeto no seu computador e iniciar o controle de versão
 
 ```
 mkdir mastering-git-branches
@@ -15,11 +15,11 @@ cd mastering-git-branches
 git init
 ```
 
-2. Criar um repositório no `Github`
+2 - Criar um repositório no `Github`
 
 ![image](https://user-images.githubusercontent.com/75334161/120942426-33072b00-c6ff-11eb-938d-2e5b2e341cef.png)
 
-3. Criar uma conexão entre o repositório local (projeto no seu computador) e o repositório remoto (`Github`)
+3 - Criar uma conexão entre o repositório local (projeto no seu computador) e o repositório remoto (`Github`)
 
 ```
 git remote add origin https://github.com/marcia-marques/mastering-git-branches.git
@@ -33,7 +33,7 @@ origin	https://github.com/marcia-marques/mastering-git-branches.git (fetch)
 origin	https://github.com/marcia-marques/mastering-git-branches.git (push)
 ```
 
-4. Vamos criar um arquivo txt para usar como exemplo e enviar as modificações para o repositório remoto
+4 - Vamos criar um arquivo txt para usar como exemplo e enviar as modificações para o repositório remoto
 
 ```
 vim log.txt
