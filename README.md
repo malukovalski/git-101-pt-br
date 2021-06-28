@@ -20,6 +20,8 @@ git init
 
 ![image](https://user-images.githubusercontent.com/75334161/120942426-33072b00-c6ff-11eb-938d-2e5b2e341cef.png)
 
+IMPORTANTE: Não crie nenhum arquivo ao iniciar o repositório (Readme ou License)
+
 3 - Criar uma conexão entre o repositório local (projeto no seu computador) e o repositório remoto (`Github`)
 
 ```
@@ -97,6 +99,8 @@ To https://github.com/marcia-marques/mastering-git-branches.git
 Repare que `master` é o nome do `branch`:
 
 ![image](https://user-images.githubusercontent.com/75334161/120944149-53d47e00-c709-11eb-8c58-0c0b1dad97ad.png)
+
+O Github usa como padrão `main`, mas quando conectamos o nosso repositório ele fez a modificação automaticamente. Também é possível mudar o nome do branch posteriormente.
 
 # Usando branches
 [&uarr;](#índice)
